@@ -1,0 +1,55 @@
+/* src/index.css */
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f0f0;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.notes-list{
+    width: calc(100% - 200px);
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.note{
+    background-color: #FEF68A;
+    border-radius: 10px;
+    padding: 25px;
+    width: calc((100% - 60px) / 5);
+}
+.note-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: #DC143C;
+    user-select: none;
+}
+small{
+    color: black;
+}
+@media(max-width: 768px){
+    .notes-list{
+        flex-direction: column;
+        padding-left: 25px;
+        padding-right: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+}
