@@ -1,9 +1,13 @@
 import './App.css';
+import NotesList from './components/NoteList';
 
 function App() {
   return (
     <div className="App">
-      Notes app
+      <h1>Notey</h1>
+      <div className="container">
+        <NotesList></NotesList>
+      </div>
     </div>
   );
 }
