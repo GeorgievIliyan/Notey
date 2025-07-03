@@ -4,7 +4,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: "Poppins", sans-serif;
 }
 *, *::before, *::after {
@@ -41,13 +41,19 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    color: #DC143C;
     user-select: none;
+}
+.delete-icon{
+    color: red;
+    transition: .2s ease-in-out all;
+    cursor: pointer;
 }
 small {
     color: black;
 }
-
+.delete-icon:hover{
+    transform: scale(1.25);
+}
 /* add note */
 .new{
     background-color: #4A90E2;
@@ -80,12 +86,41 @@ textarea:focus{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
 }
-
+.save:hover{
+    transform: scale(1.25);
+}
 
 /* responsive */
 @media (max-width: 768px) {
     .notes-list {
         padding: 0 20px;
     }
+}
+
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+.search input{
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+}
+.search input:focus{
+    outline: none;
+    border: none;
 }
