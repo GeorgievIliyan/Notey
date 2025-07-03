@@ -55,23 +55,22 @@ small {
 }
 .new textarea{
     font-family: "Poppins", sans-serif;
-    color: white;
     border: none;
+    color: white;
     font-size: 1em;
     background-color: #2C6BC4;
     padding: 10px;
     border-radius: 5px;
-    transition: .05s ease-in-out all;
     max-height: 250px;
     min-width: 220px;
     max-width: calc(1fr - 50px);
 }
-.new textarea:focus{
-    outline: 5px;
-    color: #2c6bc42a;
-}
 .new small{
     color: white;
+}
+textarea:focus{
+    outline: none;
+    border: none;
 }
 .save{
     border: none;
