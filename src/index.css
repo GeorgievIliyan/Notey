@@ -12,7 +12,6 @@ body {
 }
 h1 {
     text-align: center;
-    margin: 50px 0;
     font-size: 3em;
     font-weight: 600;
     user-select: none;
@@ -93,14 +92,6 @@ textarea:focus{
     transform: scale(1.25);
 }
 
-/* responsive */
-@media (max-width: 768px) {
-    .notes-list {
-        padding: 0 20px;
-    }
-}
-
-
 .search{
     display: flex;
     flex-direction: row;
@@ -123,4 +114,26 @@ textarea:focus{
 .search input:focus{
     outline: none;
     border: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    user-select: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .notes-list {
+        padding: 0 20px;
+    }
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
